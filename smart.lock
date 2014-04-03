@@ -1,0 +1,49 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "iron-router": {},
+      "spin": {},
+      "jquery2": {},
+      "foundation5-sass": {},
+      "isolate-value": {}
+    },
+    "packages": {
+      "iron-router": {
+        "git": "https://github.com/EventedMind/iron-router.git",
+        "tag": "v0.7.0",
+        "commit": "05f34bc48c4cad9fdaa366c1ddcabe6980232ece"
+      },
+      "spin": {
+        "git": "https://github.com/SachaG/meteor-spin.git",
+        "tag": "v0.2.2",
+        "commit": "3f655f0016228e4195acc784c45d3e3a247dc39f"
+      },
+      "jquery2": {
+        "git": "https://github.com/gadicc/meteor-jquery2.git",
+        "tag": "v2.1.0-3",
+        "commit": "44b813b57d5f4ea1d1538acb48c13cc7acfb0f45"
+      },
+      "foundation5-sass": {
+        "git": "https://github.com/lgollut/meteor-foundation5-sass.git",
+        "tag": "v0.0.13",
+        "commit": "10fed6a3c7edbbce6bd234ed41ca2b23ba4cf1cf"
+      },
+      "isolate-value": {
+        "git": "https://github.com/awwx/meteor-isolate-value.git",
+        "tag": "v2.0.2",
+        "commit": "6b8600b29190073fa3785b48b028f113edfdffc2"
+      },
+      "blaze-layout": {
+        "git": "https://github.com/EventedMind/blaze-layout.git",
+        "tag": "v0.2.2",
+        "commit": "8bc53798fe5965669ae67c72f91829fcfdceabfd"
+      },
+      "scss": {
+        "git": "https://github.com/fourseven/meteor-scss.git",
+        "tag": "v0.8.4",
+        "commit": "11af0da643944d241fe7d173af76162c4b670dee"
+      }
+    }
+  }
+}

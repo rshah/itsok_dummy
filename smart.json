@@ -1,0 +1,9 @@
+{
+  "packages": {
+    "iron-router": {},
+    "spin": {},
+    "jquery2": {},
+    "foundation5-sass": {},
+    "isolate-value": {}
+  }
+}

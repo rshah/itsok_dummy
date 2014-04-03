@@ -1,0 +1,57 @@
+<template name="navigation">
+  <nav class="top-bar" data-topbar data-options="scrolltop:false">
+    <ul class="title-area">
+        <!-- Title Area -->
+        <li class="name">
+            <h1><a href="#">It's OK</a></h1>
+        </li>
+        <li class="toggle-topbar menu-icon"><a href="#"></a></li>
+    </ul>
+    
+    <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+            <li class="has-form">
+                <div class="row">
+                    <div class="large-12 small-12 columns">
+                        <input tabindex="1" id="searchTerm" type="search" placeholder="Search..." autocomplete="off">
+                    </div>
+                </div>
+            </li>
+            <li class="divider"></li>
+            <li><a href="{{pathFor 'itemSubmit'}}">New Item</a></li>
+            <li class="divider"></li>
+            {{> categoriesParentMenu}}
+        </ul>
+    </section>
+  </nav>
+    <!-- End Top Bar -->
+</template>
+
+<template name="categoriesParentMenu">
+    <li class="has-dropdown">
+        <a href="#">Categories</a>
+        <ul class="dropdown">
+            {{> categoriesMenu}}
+        </ul>
+    </li>
+</template>
+
+<template name="categoriesMenu">            
+    {{#each categories}}
+        {{#if hasChildren}}
+            <li><label>{{_id}}</label></li>
+            <li class="has-dropdown not-click">
+                <a href="#">{{_id}}</a>
+                <ul class="dropdown">
+                <li class="title back js-generated"><h5><a href="javascript:void(0)">Back</a></h5></li>
+                {{> categoriesMenu}}
+                </ul>
+            </li>
+        {{else}}
+            <li>
+                <a data-link="read" data-name="{{_id}}" href="/categories/{{_id}}">{{_id}}</a>
+            </li>
+        {{/if}}
+    {{/each}}
+</template>

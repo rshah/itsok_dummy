@@ -1,0 +1,52 @@
+<template name="itemSubmit">
+  <div class="row">
+    <form data-abide="" novalidate="novalidate">
+      <fieldset>
+        <legend>Product Data</legend>
+        <div class="row">
+          <div class="large-12 columns">
+            <label for="productName">Name
+              <input type="text" id="productName" placeholder="Original product name">
+            </label>
+          </div>
+        </div>
+        <div class="row collapse">
+          <label for="company">Company
+            <select id="company" class="medium">
+              {{#each companies}}
+              <option value="{{_id}}">{{name_1}}</option>
+              {{/each}}
+            </select>
+          </label>
+        </div>
+        <!--<div class="row">
+          <div class="large-12 columns">
+            <label for="company">Company
+              <input type="text" id="company" placeholder="Company name">
+            </label>
+          </div>
+        </div>-->
+        <div class="row">
+          <div class="large-12 columns">
+            <label for="thumbnail">Thumbnail
+              <input type="text" id="thumbnail" placeholder="URL for thumbnail">
+            </label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="large-12 columns">
+            <hr>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="large-12 columns">
+            <button type="submit" class="medium button green">Submit</button>
+          </div>
+        </div>
+
+      </fieldset>
+    </form>
+  </div>
+</template>
+ 

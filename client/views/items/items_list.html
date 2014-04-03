@@ -1,0 +1,15 @@
+<template name="itemsList">
+    <div class="row items">
+        {{#each items}}
+        {{> item}}
+        {{/each}}
+        {{#dummyPaddings items.count}}
+        {{/dummyPaddings}}        
+    </div>
+</template>
+
+<template name="dummyPaddings">
+  {{#each times}}
+      {{> emptyItem}}
+  {{/each}}
+</template>

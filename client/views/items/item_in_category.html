@@ -1,0 +1,9 @@
+<template name="itemInCategory">
+    <div class="row items">
+        {{#each items}}
+        {{> item}}
+        {{/each}}
+        {{#dummyPaddings items.count}}
+        {{/dummyPaddings}}        
+    </div>
+</template>

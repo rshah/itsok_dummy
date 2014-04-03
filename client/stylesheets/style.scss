@@ -1,0 +1,13 @@
+@import "packages/foundation5-sass/foundation"; 
+
+.text_ellipsis {
+  overflow:hidden;
+  white-space:nowrap;
+  text-overflow:ellipsis;
+}
+.description {
+  padding:0.75em;
+}
+.category {
+  list-style-type:none
+}
